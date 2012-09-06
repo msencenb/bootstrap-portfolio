@@ -1,0 +1,17 @@
+!!! 5
+html
+	include header
+	body
+		.container
+			.row
+				.span3
+					.row
+						.span3
+							img(src="/img/cartoon_face_white.png")
+					.row
+						.span3
+							ul.nav.nav-pills.nav-stacked
+								for navigationLink in navigationLinks
+									include navigationLink
+				.span9
+					block content

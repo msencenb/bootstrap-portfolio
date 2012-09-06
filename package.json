@@ -1,0 +1,18 @@
+{
+	"name": "portfolio-reqs",
+	"description": "dependencies for new portfolio site",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"preinstall": "npm i -g less;npm i -g jshint;npm i -g recess;npm i -g uglify-js; npm i -g mocha"
+	},
+	"dependencies": {
+		"express": "3.x",
+		"mocha": "1.3.2",
+		"coffee-script": "1.3.3",
+		"jade": "0.27.2",
+		"node-mandrill": "1.0.0",
+		"connect-flash": "0.1.0",
+		"should": "1.1.0"
+	}
+}

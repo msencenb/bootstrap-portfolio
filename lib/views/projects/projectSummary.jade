@@ -1,0 +1,9 @@
+li.span3
+	.thumbnail
+		img(src='/img/#{project.image}260x180.jpg')
+		.caption
+			h3 #{project.name}
+			p #{project.description}
+			p
+				a.btn.btn-primary(data-target="##{project.pretty_id()}_modal",role="button",data-toggle="modal") View Details
+include projectModal

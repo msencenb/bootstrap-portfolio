@@ -1,0 +1,8 @@
+//projects index
+extends ../layout
+
+block content
+	h1 Projects
+	ul.thumbnails
+		for project in projects
+			include projectSummary
