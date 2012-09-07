@@ -1,4 +1,4 @@
-class Skill
+module.exports = class Skill
 	constructor: (@name,@years,@width) ->
 
 Skill.portfolio_skills = ->
@@ -18,5 +18,3 @@ module.exports.setup = (app) ->
 	skills = Skill.portfolio_skills()
 	app.get '/skills', (req,res) ->
 		res.render('skills', {skills: skills})
-
-module.exports = Skill

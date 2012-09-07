@@ -1,4 +1,4 @@
-class NavigationLink
+module.exports = class NavigationLink
 	constructor: (@title,@url) ->
 
 NavigationLink.portfolio_links = ->
@@ -9,4 +9,3 @@ NavigationLink.portfolio_links = ->
     	new NavigationLink " Contact", "/contact"
  	]
 
-module.exports = NavigationLink
