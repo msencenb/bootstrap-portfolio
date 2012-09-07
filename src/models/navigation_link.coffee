@@ -9,4 +9,4 @@ NavigationLink.portfolio_links = ->
     	new NavigationLink " Contact", "/contact"
  	]
 
- module.exports = NavigationLink
+module.exports = NavigationLink
