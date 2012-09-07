@@ -3,7 +3,7 @@ module.exports.setup = (app) ->
 		res.render('contact',{ successful_send : req.flash('sucess') })
 
 	app.post '/contact', (req,res) ->
-		mandrill = require('node-mandrill')('3a76a23d-168a-4a5e-ad36-c9df471fa3a0');
+		mandrill = require('node-mandrill')('INSERT YOUR API KEY HERE');
 		mandrill('/messages/send', {
     		message: {
         		to: [{email: 'matt.sencenbaugh@gmail.com', name: 'Matt Sencenbaugh'}],
