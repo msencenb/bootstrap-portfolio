@@ -21,6 +21,15 @@ Running this command in the root directory will compile all coffeescript from th
     'make watch'
 If you want to get fancy this script will continually monitor the src folder for coffeescript file changes and automatically compile and move them to the lib folder
 
+### Compiling Twitter Bootstrap
+    'make bootstrap'
+While I haven't included the twitter bootstrap src I used to build the css and js for this project if you want custom css simply clone bootstrap into the /src folder like this:
+
+    'git clone git://github.com/twitter/bootstrap.git'
+
+Once that repo is present in the src file running 'make bootstrap' will compile the LESS and move the appropriate css,js, and img folders into the public folder of lib.
+
+
 ### Testing
     'make test'
 This command runs the mocha tests for this project. You can change the reporter option in the Makefile itself if you prefer another output format. Please note that I only wrote unit tests for the models in this project and skipped on unit tests for routing since there are only a handful. 
