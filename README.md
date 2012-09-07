@@ -23,11 +23,11 @@ If you want to get fancy this script will continually monitor the src folder for
 
 ### Compiling Twitter Bootstrap
     'make bootstrap'
-While I haven't included the twitter bootstrap src I used to build the css and js for this project if you want custom css simply clone bootstrap into the /src folder like this:
+While I haven't included the twitter bootstrap src in this project, if you want custom stylesclone bootstrap into the /src folder like this:
 
     'git clone git://github.com/twitter/bootstrap.git'
 
-Once that repo is present in the src file running 'make bootstrap' will compile the LESS and move the appropriate css,js, and img folders into the public folder of lib.
+Once that repo is present in the src file running 'make bootstrap' will compile the LESS and move the appropriate css, js, and img folders into the public folder of lib.
 
 
 ### Testing
