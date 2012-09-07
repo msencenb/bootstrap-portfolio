@@ -2,12 +2,11 @@
 This repository is a tragically overengineered node.js website used to power my personal portfolio. Along the way I got to enjoy several new technologies and learned a few things. If you want to setup a portfolio of your own based on this project here are the steps:
 
 ## Development Environment
-I like to isolate my environment dependencies as much as possible on my development machine so for developing this project I used python's [virtualenv](http://pypi.python.org/pypi/virtualenv "virtualenv")virtualenv in conjunction with [nodeenv](https://github.com/ekalinin/nodeenv "nodeenv") to keep things clean an disolated.
+I like to isolate my environment dependencies as much as possible on my development machine so for developing this project I used python's [virtualenv](http://pypi.python.org/pypi/virtualenv "virtualenv") in conjunction with [nodeenv](https://github.com/ekalinin/nodeenv "nodeenv") to keep things clean an disolated.
 
 ## Installing dependencies
-Once you have installed and activated virtualenv and nodeenv run:
     'npm install' 
-in the root directory to install dependencies. I also like to use nodemon (a tool that auto restarts node.js servers when it detects changes)
+Once you have installed and activated virtualenv and nodeenv runin the root directory to install dependencies. I also like to use nodemon (a tool that auto restarts node.js servers when it detects changes)
 
 In addition if you want to have a functioning contact form please input your Mandrill (by Mailchimp) API key in the form.coffee file
 
