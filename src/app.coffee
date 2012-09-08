@@ -14,7 +14,10 @@ NavigationLink = require('./models/navigation_link.js')
 app.use (req,res,next) ->
   res.locals.navigationLinks = NavigationLink.portfolio_links()
   res.locals.path = req.path
-  next()
+  if req.headers.host.match(/^www/) != null
+  	res.redirect('http://' + req.headers.host.replace(/^www\./,'') + req.url)
+  else
+    next()
 
 app.use(app.router)
 app.set('views', __dirname + '/views')
