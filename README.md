@@ -31,4 +31,4 @@ Once that repo is present in the src file running 'make bootstrap' will compile 
 
 ### Testing
     'make test'
-This command runs the mocha tests for this project. You can change the reporter option in the Makefile itself if you prefer another output format. Please note that I only wrote unit tests for the models in this project and skipped on unit tests for routing since there are only a handful. 
+This command runs the mocha tests for this project. You can change the reporter option in the Makefile itself if you prefer another output format.
