@@ -1,0 +1,107 @@
+.mobile-container {
+    padding-top: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.screen-component {
+    position: absolute;
+    left: 0px;
+    width: 99%;
+    z-index: 2000;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.screen-component.active {
+    z-index: 5000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.prompt {
+    margin-left: 5px;
+    text-align: left;
+}
+
+.mobile-range-finder {
+    margin-left: 5px;
+    min-height: 50px;
+}
+
+.range-container {
+    float: left;
+    margin: 0;
+    width: 90%;
+    min-height: 20px;
+    background: url('img/middle_track.png') left repeat-x;
+}
+
+.left-track-end {
+    float: left;
+    margin: 0;
+    min-width: 14px;
+    width: 2.5%;
+    background: url('img/left_track.png') right no-repeat;
+    min-height: 20px;
+}
+
+.right-track-end {
+    float: left;
+    margin: 0;
+    width: 2.5%;
+    min-width: 14px;
+    background: url('img/right_track.png') left no-repeat;
+    min-height: 20px;
+}
+
+.range-notch {
+    float: left;
+    width: 9%;
+    min-height: 17px;
+    background: url('img/notch.png') center no-repeat;
+}
+
+.range-selected {
+    background: url('img/knob.png') center no-repeat;
+}
+
+.range-labels {
+    float: left;
+    margin: 0;
+    margin-top: 10px;
+    width: 95%;
+    min-height: 20px;
+}
+
+.range-buttons {
+    float: left;
+    margin: 0;
+    margin-top: 10px;
+    width: 95%;
+    min-height: 20px;
+}
+
+.increment-button {
+    float: right;
+}
+
+.decrement-button {
+    float: left;
+}
+
+.left-label {
+    margin-left: 4.5%;
+    float: left;
+}
+
+.right-label {
+    margin-right: 4.5%;
+    float: right;
+}
+
+.test-value-label {
+    font-size: 20px;
+    text-align: center;
+    width: 95%;
+}

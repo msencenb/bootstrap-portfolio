@@ -1,0 +1,37 @@
+!!! 5
+html
+    title Tap Slider Playground
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=1.0")
+    link(rel="stylesheet", href="/tapslider/css/bootstrap.css")
+    link(rel="stylesheet", href="/tapslider/css/bootstrap-responsive.css")
+    link(rel="stylesheet", href="/tapslider/css/slider.css")
+    script(src='tapslider/js/jquery-1.9.1.min.js')
+    script(src='tapslider/js/bootstrap.js')
+    script(src='tapslider/js/range.js')
+    body
+        .mobile-container
+            .screen-component.active
+                .row-fluid.question-container
+                    p.prompt How bad is your pain on a scale of 1 to 10?
+                    .mobile-range-finder
+                        p.test-value-label
+                        .left-track-end
+                        .range-container
+                            .range-notch(data-index="0")
+                            .range-notch(data-index="1")
+                            .range-notch(data-index="2")
+                            .range-notch(data-index="3")
+                            .range-notch(data-index="4")
+                            .range-notch(data-index="5")
+                            .range-notch(data-index="6")
+                            .range-notch(data-index="7")
+                            .range-notch(data-index="8")
+                            .range-notch(data-index="9")
+                            .range-notch(data-index="10")
+                        .right-track-end
+                        .range-labels
+                            .left-label 0
+                            .right-label 10
+                        .range-buttons
+                            .decrement-button.btn.btn-small -
+                            .increment-button.btn.btn-small +

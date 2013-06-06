@@ -35,5 +35,8 @@ AppForms.setup(app)
 app.get '/', (req,res) ->
 	res.render('about')
 
+app.get '/playground/tapslider', (req,res) ->
+  res.render('tapslider')
+
 app.listen(3000)
 console.log('listening on port 3000')
