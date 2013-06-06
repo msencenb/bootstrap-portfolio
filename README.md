@@ -2,28 +2,27 @@
 This repository is a tragically overengineered node.js website used to power my personal portfolio. Along the way I got to enjoy several new technologies and learned a few things. If you want to setup a portfolio of your own based on this project here are the steps:
 
 ## Development Environment
-I like to isolate my environment dependencies as much as possible on my development machine so for developing this project I used python's [virtualenv](http://pypi.python.org/pypi/virtualenv "virtualenv") in conjunction with [nodeenv](https://github.com/ekalinin/nodeenv "nodeenv") to keep things clean an disolated.
+To keep things clean I used python's [virtualenv](http://pypi.python.org/pypi/virtualenv "virtualenv") in conjunction with [nodeenv](https://github.com/ekalinin/nodeenv "nodeenv") for this portfolio. Another option I have used more recently is nvm.
 
 ## Installing dependencies
     'npm install' 
-Once you have installed and activated virtualenv and nodeenv runin the root directory to install dependencies. I also like to use nodemon (a tool that auto restarts node.js servers when it detects changes)
 
-In addition if you want to have a functioning contact form please input your Mandrill (by Mailchimp) API key in the form.coffee file
+If you want to have a functioning contact form please input your Mandrill (by Mailchimp) API key in the form.coffee file
 
 ## Build scripts
 Included in the file is a Makefile used to perform various objectives.
 
 ### Compiling Coffeescript
     'make'
-Running this command in the root directory will compile all coffeescript from the src folder and move it into the src folder
+Running this command in the root directory will compile all coffeescript from the src folder and move it into the lib folder
 
 ### Watch
     'make watch'
-If you want to get fancy this script will continually monitor the src folder for coffeescript file changes and automatically compile and move them to the lib folder
+If you want to get fancy, this script will continually monitor the src folder for coffeescript file changes and automatically compile and move them to the lib folder
 
 ### Compiling Twitter Bootstrap
     'make bootstrap'
-While I haven't included the twitter bootstrap src in this project, if you want custom stylesclone bootstrap into the /src folder like this:
+While I haven't included the twitter bootstrap src in this project if you want custom styles, clone bootstrap into the /src folder like this:
 
     'git clone git://github.com/twitter/bootstrap.git'
 
